@@ -11,12 +11,12 @@ const PageDetails = () => {
         <section id="breadcrumb">
           <ul className="breadcrumb pull-left">
             <li>
-              <NavLink to="/">
-                <img className="iconSVGProduct" src={img2}></img> Trang chủ
+              <NavLink to="/" >
+                <img className="iconSVGProduct" alt="" src={img2}></img> Trang chủ
               </NavLink>
             </li>
             <li className="last">
-              <span><img className="iconSVGProduct2" src={img1}></img> Sản phẩm</span>
+              <span><img className="iconSVGProduct2" alt="" src={img1}></img> Sản phẩm</span>
             </li>
           </ul>
         </section>

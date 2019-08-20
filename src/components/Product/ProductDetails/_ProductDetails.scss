@@ -23,10 +23,6 @@ h1.title {
     background: #fff;
     text-align: center;
 
-    img {
-      visibility: visible;
-    }
-
     a {
       display: block;
     }
@@ -105,4 +101,8 @@ a {
   display: block;
   position: relative;
   transition: all .3s ease 0s;
+}
+.imgProduct{
+  height: 200px;
+  width:200px;
 }

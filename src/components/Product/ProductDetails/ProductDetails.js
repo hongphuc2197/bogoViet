@@ -36,7 +36,7 @@ const ProductDetails = () => {
               <div className="box-block box-product">
                 <figure className="list-product">
                   <NavLink className="banner-cubic-7" to="/">
-                    <img alt="img" src={A[`img${index + 1}`]} />
+                    <img alt="img" src={A[index]} className="imgProduct" />
                     
                   </NavLink>
                 </figure>

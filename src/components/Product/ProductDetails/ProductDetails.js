@@ -32,7 +32,7 @@ const ProductDetails = () => {
         <h1 className="title">Sản phẩm</h1>
         <div className="row">
           {dataProduct.map((block, index) => (
-            <div key={index} className="col-lg-3 col-md-3 col-xs-6">
+            <div key={index} className="col-lg-3 col-md-3 col-xs-6 borderProduct">
               <div className="box-block box-product">
                 <figure className="list-product">
                   <NavLink className="banner-cubic-7" to="/">

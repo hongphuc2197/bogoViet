@@ -38,6 +38,7 @@ const FooterInfo = () => (
               href="https://www.facebook.com/101677661191439/"
               className="fb"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="lbl">{dataFooter[3].title}</span>
             </a>

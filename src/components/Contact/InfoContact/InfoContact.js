@@ -1,14 +1,12 @@
 import React from "react"
+import "./InfoContact.scss"
+import { dataFooter } from "../../../data/dataFooter"
 
 const InfoContact = () => {
   return (
     <section id="columns" className="columns-home">
       <div className="container">
-        <article
-          className="article"
-          itemScope=""
-          itemType="http://schema.org/Article"
-        >
+        <article className="article">
           <div className="contacts content-background">
             <div className="row">
               <div className="col-md-12">
@@ -23,16 +21,18 @@ const InfoContact = () => {
                     </h2>
                     <div className="content">
                       <span className="label">
-                        <strong>Địa chỉ:</strong> 181 Phan Đăng Lưu, Phường 1,
-                        Quận Phú Nhuận, Tp.Hồ Chí Minh
+                        <strong>{dataFooter[0].title}</strong>{" "}
+                        {dataFooter[0].content}
                       </span>
                       <span className="label">
-                        <strong>Điện thoại:</strong>{" "}
-                        <a href="tel:0907 251 087">0907 251 087</a>{" "}
+                        <strong>{dataFooter[1].title}</strong>{" "}
+                        <a href="tel:0907 251 087">{dataFooter[1].content}</a>{" "}
                       </span>
                       <span className="label">
-                        <strong>Email:</strong>{" "}
-                        <a href="mailto:info@caffene.vn">info@caffene.vn</a>{" "}
+                        <strong>{dataFooter[2].title}</strong>{" "}
+                        <a href="mailto:bogoviet.vn@gmail.com">
+                          {dataFooter[2].content}
+                        </a>{" "}
                       </span>
                     </div>
                   </div>
@@ -55,24 +55,18 @@ const InfoContact = () => {
                         <span>*Họ tên:</span>
                         <input
                           className="text-box single-line"
-                          data-val="true"
-                          data-val-required="The Name field is required."
                           id="Name"
                           name="Name"
                           type="text"
-                          value=""
                         />
                       </div>
                       <div className="text1 col-md-12 col-xs-12">
                         <span>*Điện thoại:</span>
                         <input
                           className="text-box single-line"
-                          data-val="true"
-                          data-val-required="The Phone field is required."
                           id="Phone"
                           name="Phone"
                           type="text"
-                          value=""
                         />
                       </div>
                       <div className="text1 col-md-12 col-sm-12">
@@ -84,7 +78,6 @@ const InfoContact = () => {
                           id="Email"
                           name="Email"
                           type="email"
-                          value=""
                         />
                       </div>
                       <div className="text1 col-md-12 col-xs-12">
@@ -96,25 +89,11 @@ const InfoContact = () => {
                           id="Subject"
                           name="Subject"
                           type="text"
-                          value=""
                         />
                       </div>
                       <div className="context-c1 col-md-12 col-xs-12">
                         <span>*Nội dung:</span>
                         <textarea cols="20" id="Body" name="Body" rows="2" />
-                      </div>
-                      <div className="captchas col-md-12 col-xs-12">
-                        <span>*Mã bảo vệ:</span>
-                        <input
-                          className="text-box single-line"
-                          data-val="true"
-                          data-val-required="The CaptCha field is required."
-                          id="CaptCha"
-                          name="CaptCha"
-                          type="text"
-                          value=""
-                        />
-                        <img src="/Install/ShowCaptchaImage" />
                       </div>
                     </div>
                     <div className="contact-submit">

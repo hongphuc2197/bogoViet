@@ -1,0 +1,126 @@
+@import '../../../../styles/styles.scss';
+
+section#columns {
+  width: 100%;
+}
+
+.home-news-grid {
+  figure {
+    position: relative;
+
+    .banner-cubic-7 {
+      overflow: hidden;
+      position: relative;
+      display: block;
+
+      &:before {
+        border-color: #000 transparent transparent;
+        top: 0;
+        left: 0;
+      }
+
+      &:after {
+        border-color: transparent transparent #000;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .items {
+    width: 100%;
+    background-color: #fff;
+
+    .row.rowHome {
+      padding-top: 50px;
+    }
+
+    .meta {
+      .description {
+        text-align: center;
+        font-size: 17px;
+      }
+
+      h3 {
+        padding: 38px 0;
+        line-height: 21px;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        background: url(../../../../assets/images/homepage/home_news_grid_h3.png) no-repeat center bottom;
+
+        a {
+          color: #921936;
+          line-height: 1.2em;
+        }
+      }
+
+      .m-left {
+        margin-left: 10px;
+
+        p {
+          line-height: 1.7;
+        }
+      }
+
+      .detail {
+        margin: 22px 0 10px 0;
+        text-align: center;
+
+        a {
+          background-color: #921936;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
+          padding: 10px 30px;
+          display: inline-block;
+          font-size: 15px;
+          font-weight: 700;
+          border-radius: 20px;
+        }
+      }
+    }
+
+  }
+}
+
+.banner-cubic-7:before,
+.banner-cubic-7:after {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  opacity: .3;
+  filter: alpha(opacity=30);
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+a {
+  cursor: pointer;
+  color: #333;
+  outline: none !important;
+  text-decoration: none !important;
+  display: block;
+  position: relative;
+  -webkit-transition: all .3s ease 0s;
+  -moz-transition: all .3s ease 0s;
+  -ms-transition: all .3s ease 0s;
+  -o-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+figure {
+  text-align: center;
+}
+
+p {
+  line-height: 1.72222;
+  margin: 0 0 11px;
+}
